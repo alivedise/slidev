@@ -155,7 +155,7 @@ flowchart LR
     style H fill:#e1f5fe
 ```
 
-* 不可發散，永遠要更新規格
+* 不可發散，永遠要回頭更新規格
 * 寫規範性的規格
   - 如果曾經過去嘗試 Spec First 失敗了，那代表規格本身並不具備執行性
   - AI 是檢查可執行性的重要角色
@@ -225,3 +225,4 @@ flowchart LR
   - 縮減團隊規模：TBD
 
 </v-clicks>
+

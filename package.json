@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node scripts/build-all.js",
     "dev": "slidev",
-    "preview": "slidev --port 3030"
+    "preview": "slidev --port 3030",
+    "sync": "cp /Users/alive/Projects/alivedise-dev/proposals/agentic-coding-workflow-slides-2025.md presentations/presentation-20250827/slides.md"
   },
   "packageManager": "pnpm@9.0.0",
   "devDependencies": {

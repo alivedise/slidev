@@ -26,6 +26,15 @@ async function buildAllPresentations() {
       const buildCommand = `cd "${presentationPath}" && npx slidev build --base /slidev/${presentation}/ --out ../../dist/${presentation}`
       execSync(buildCommand, { stdio: 'inherit' })
       
+      // Copy index.html as 404.html for SPA routing on GitHub Pages
+      const distPresentationPath = path.join(distDir, presentation)
+      const indexPath = path.join(distPresentationPath, 'index.html')
+      const notFoundPath = path.join(distPresentationPath, '404.html')
+      if (await fs.pathExists(indexPath)) {
+        await fs.copy(indexPath, notFoundPath)
+        console.log(`✅ Created 404.html for SPA routing: ${presentation}`)
+      }
+      
       console.log(`✅ Built: ${presentation}`)
     }
   }
