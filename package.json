@@ -1,0 +1,19 @@
+{
+  "name": "slidev-presentations",
+  "version": "1.0.0",
+  "description": "Multiple Slidev presentations deployed to GitHub Pages",
+  "scripts": {
+    "build": "node scripts/build-all.js",
+    "dev": "slidev",
+    "preview": "slidev --port 3030"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "devDependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "latest",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
