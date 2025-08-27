@@ -23,7 +23,7 @@ async function buildAllPresentations() {
       console.log(`Building presentation: ${presentation}`)
       
       // Build the presentation
-      const buildCommand = `cd "${presentationPath}" && npx slidev build --base /${presentation}/ --out ../../dist/${presentation}`
+      const buildCommand = `cd "${presentationPath}" && npx slidev build --base /slidev/${presentation}/ --out ../../dist/${presentation}`
       execSync(buildCommand, { stdio: 'inherit' })
       
       console.log(`✅ Built: ${presentation}`)
